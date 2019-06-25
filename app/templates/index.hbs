@@ -1,1 +1,25 @@
-<h1>Home pape</h1>
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>{{headerMessage}}</h1>
+
+        <br/><br/>
+
+        <p>Don't miss our launch date, request an invitiation now.</p>
+        
+        <div class="form-horizontal form-group from-group-lg row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
+                <br/>
+                {{input type="email" value=emailAdress class="form-control" placeholder="Type your email address..." autofocus="autofocus"}}
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
+                <br/>
+                <button disabled={{isDisabled}} {{action 'saveInvitation'}} class="btn btn-primary btn-md btn-block">Request invitation</button>
+            </div>
+        </div>
+        <br/>
+        {{#if responseMessage}}
+            <div class="alert alert-success">{{responseMessage}}</div>
+        {{/if}}
+        <br/>
+    </div>
+</div>
