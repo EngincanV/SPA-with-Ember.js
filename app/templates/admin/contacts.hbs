@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Contacts</h2>
+    <br>
+    <table class="table table-bordered striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>E-mail</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each model as |contact|}}
+                <tr>
+                    <td>{{contact.id}}</td>
+                    <td>{{contact.email}}</td>
+                    <td>{{contact.message}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    
+</div>
+
+{{outlet}}

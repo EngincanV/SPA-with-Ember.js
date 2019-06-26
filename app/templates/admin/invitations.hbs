@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Invitations</h2>
+    <br>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each model as |invitation|}}
+                <tr>
+                    <td>{{invitation.id}}</td>
+                    <td>{{invitation.email}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
