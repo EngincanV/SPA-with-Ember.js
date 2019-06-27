@@ -6,6 +6,7 @@
             <tr>
                 <th>ID</th>
                 <th>E-mail</th>
+                <th class="text-center">Operations</th>
             </tr>
         </thead>
         <tbody>
@@ -13,6 +14,9 @@
                 <tr>
                     <td>{{invitation.id}}</td>
                     <td>{{invitation.email}}</td>
+                    <td class="text-center">
+                        <button class="btn btn-danger btn-sm" {{action 'deleteInvitations' invitation}}>Delete</button>
+                    </td>
                 </tr>
             {{/each}}
         </tbody>

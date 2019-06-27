@@ -15,6 +15,7 @@ module.exports = function(environment) {
       messagingSenderId: 'UPDATE-THIS'
     },
 
+
     // if using ember-cli-content-security-policy
     contentSecurityPolicy: {
       'script-src': "'self' 'unsafe-eval' apis.google.com",

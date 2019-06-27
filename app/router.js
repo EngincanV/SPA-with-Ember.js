@@ -18,8 +18,10 @@ Router.map(function() {
   //creating a route is exactly right that
   this.route('libraries', () =>{
     this.route('new');
+    this.route('edit', { path: '/:library_id/edit' });
   }, function() {
     this.route('new');
+    this.route('edit');
   });
 
 });
